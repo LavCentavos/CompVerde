@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TI Verde</title>
+<link rel="stylesheet" href="indexia.css"
+
+</head>
+<body>
+    <header>
+        <h1>TI Verde</h1>
+        <p>Descubra como a tecnologia pode crescer com sustentabilidade, diminuir o impacto ambiental e gerar valor para negócios e comunidades.</p>
+    </header>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#praticas">Práticas</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#faqs">FAQs</a>
+    </nav>
+    <main>
+
+
+<div class="carrossel">
+
+    <div class="imgs" id="imgs">
+
+                    <div class="slide">
+                       
+
+                    <div class="card card-imagem">
+            
+                    <div class="texto" id="sobre">
+            <h2>O que é TI verde?</h2>
+             
+                </div>
+                    <div class="imagem">
+            <img src="imagens/img1.png" alt="TI Verde">
+                    </div>
+                    
+                    </div>
+                    </div>
+
+                    <div class="slide">
+                    <div class="card">
+            
+                    <div class="praticas">
+                        
+                        <p>
+                             TI verde é a aplicação de tecnologias de informação e
+
+                    comunicação de forma sustentável, reduzindo consumo de
+
+                    energia, diminuindo desperdício e ampliando a vida útil
+
+                    de equipamentos.
+                        </p>
+                    </div>
+
+                    </div>
+
+                    </div>
+                    
+                    <div class="slide">
+                    
+                    <div class="card card-imagem">
+            
+                    <div class="texto">
+                    <h2>Por que é importante?</h2>
+             
+                    </div>
+                    <div class="imagem">
+                    <img src="imagens/img3.png" alt="TI Verde">
+                    </div>
+                    
+                    </div>
+
+                    </div>
+
+                    <div class="slide">
+                    <div class="card">
+                <div class="praticas">
+                <p>
+                    A adoção de práticas de TI verde ajuda empresas a cumprir
+                    metas de ESG, cortar custos operacionais e colaborar com a
+                    redução das emissões de gases do efeito estufa.
+                </p>
+                </div>
+            </div>
+                    </div>
+
+                    
+                    
+                    <div class="slide">
+                    <div class="card card-imagem">
+
+        <div class="texto">
+            <h2>Práticas essenciais de TI verde</h2>
+            
+        </div>
+
+        <div class="imagem">
+            <img src="imagens/img2.png" alt="TI Verde">
+        </div>
+
+                    </div>
+                    </div>
+
+                     <div class="slide">
+                <div class="card">
+            
+                    <div class="praticas2">
+                        <h3>1. Eficiência energética</h3>
+                        <p>
+                            Use servidores e data centers mais eficientes,
+                            adote CPUs com baixo consumo e configure recursos
+                            para desligamento automático quando ocioso.
+                        </p>
+                    </div>
+
+                    </div>
+
+                    </div>
+
+                    <div class="slide">
+                    <div class="card">
+                    <div class="praticas2">
+                        <h3>2. Computação em nuvem sustentável</h3>
+                        <p>
+                            Prefira provedores que usam energia renovável e
+                            otimize cargas de trabalho para reduzir uso de
+                            recursos desnecessários.
+                        </p>
+                    </div>
+                    </div>
+                    </div>
+                    
+                    <div class="slide">
+                    <div class="card">
+                    <div class="praticas2">
+                        <h3>3. Ciclo de vida do hardware</h3>
+                        <p>
+                            Mantenha equipamentos mais tempo, reutilize
+                            componentes e recicle de forma responsável ao
+                            descartar dispositivos.
+                        </p>
+                    </div>
+                </div>
+
+                    </div>
+
+                    <div class="slide">
+                    <div class="card">
+                       
+                        <div class="titulo">Benefícios de adotar TI verde</h2></div>
+                        <div class="praticas">
+            <ul>
+                <li>Redução de custos com energia e refrigeração;</li>
+                <li>Melhora da imagem institucional e conformidade com regulamentos ambientais;</li>
+                <li>Aumento da resiliência e eficiência operacional;</li>
+                <li>Impacto positivo na comunidade e no planeta.</li>
+            </ul>
+                      </div>
+                    </div>
+                    </div>
+
+    </div>
+
+</div>
+
+    <button class="anterior" onclick="voltar()">❮</button>
+    <button class="proximo" onclick="avancar()">❯</button>
+
+
+
+<script>
+let pos = 0;
+
+function mover() {
+    document.getElementById("imgs").style.transform =
+        `translateX(-${pos * 100}%)`;
+}
+
+function avancar() {
+    pos++;
+
+    if (pos > 8) {
+        pos = 0;
+    }
+
+    mover();
+}
+
+function voltar() {
+    pos--;
+
+    if (pos < 0) {
+        pos = 8;
+    }
+
+    mover();
+}
+
+setInterval(avancar, 5000);
+</script>

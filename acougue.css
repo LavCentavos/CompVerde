@@ -1,0 +1,213 @@
+
+    @font-face {
+    font-family: nami;
+    src: url(nami/fonte.otf) format(opentype);
+}
+
+
+    body{
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #130101, #7d0000);
+    position: relative;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+    
+
+    html{
+
+    scroll-behavior: smooth;
+
+    }
+
+
+    .space{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+
+    nav{
+    height: 50px;
+    display: flex;
+    background: #332323;
+    background: linear-gradient(0deg, rgba(51, 35, 35, 1) 0%, rgba(4, 1, 1, 1) 4%, rgba(26, 6, 6, 1) 27%, rgba(137, 0, 0, 1) 94%, rgba(255, 120, 120, 1) 100%);
+
+}
+
+   .bife{
+    width: 30px;
+    filter: brightness(0) saturate(100%) invert(80%) sepia(67%) saturate(749%) hue-rotate(120deg);
+}
+
+    .diva {
+  
+    font-family: nami;
+            
+    font-size: 45px; 
+    text-shadow: 7px 3px 2px rgba(255, 0, 0, 0.649);       
+    color: #000000;
+}
+
+
+    .btn{
+
+    background-color: #6e0505;
+    background: linear-gradient(0deg,  rgba(110, 5, 5, 1) 1%, #d91417 6%, #d91417 28%, rgba(102, 4, 4, 1) 98%, rgb(173, 0, 0) 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0.5% 1%;
+    font-size: 20px;
+    transition: 0.5s ease;
+    }
+        
+   .btn:hover{
+    box-shadow: #130101 0px 0px 10px, #130101 0px 0px 40px, #130101 0px 0px 80px;
+    padding: 0.6% 1.2%;
+    font-size: 21px;
+   } 
+        
+    .section {
+      
+    height: auto;
+    color: aliceblue;
+    background-color: #130101;
+   
+    width: 80%;
+    margin: 0px auto;
+    border-radius: 10px;
+}
+
+    .container {
+
+        
+    text-align: center;
+    padding: 50px;
+    background: #6e0505;
+    background: linear-gradient(0deg,  rgba(110, 5, 5, 1) 1%, rgba(173, 49, 51, 1) 6%, rgba(217, 20, 23, 1) 28%, rgba(102, 4, 4, 1) 98%, rgba(235, 87, 87, 1) 100%);
+}
+
+
+    h1{
+    font-size: 35px;
+    font-family: nami;
+    text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.811);
+}
+
+    p{
+    font-size: 20px;
+    text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.811);
+}
+
+    a{
+    font-size: 15px;
+}
+
+   .carrossel{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgs{
+    display: flex;
+    transition: 0.5s;
+}
+
+.slide{
+    min-width: 100%;
+}
+
+.slide img{
+    width: 100%;
+    display: block;
+}
+
+.anterior,
+.proximo{
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: rgba(0,0,0,0.5);
+    color: white;
+
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+
+    font-size: 25px;
+    z-index: 10;
+}
+
+.anterior{
+    left: 10px;
+}
+
+.proximo{
+    right: 10px;
+}
+
+
+
+        
+        .catalogo { 
+            
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            justify-content: center; }
+        
+            .produto {
+                
+            background: white;
+            border-radius: 8px; width: 250px;
+            padding: 12px;
+             text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+
+        .produto img { 
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px; }
+
+
+        .produto h2 { font-size: 1.2em; margin: 15px 0 10px; }
+        .produto .preco { font-size: 1.1em; color: #e63946; font-weight: bold; margin-bottom: 15px; }
+        .produto button 
+        { background: #ff4f4f;
+            background: linear-gradient(0deg, rgba(255, 79, 79, 1) 0%, rgba(74, 0, 0, 1) 5%, rgba(41, 0, 0, 1) 14%, rgba(255, 0, 0, 1) 87%, rgba(252, 167, 167, 1) 99%);
+            color: white;
+            border: none; 
+            padding: 10px 15px;
+            border-radius: 4px; 
+            cursor: pointer; }
+
+            .produto button:hover{
+                box-shadow: #130101 0px 0px 10px, #130101 0px 0px 40px, #130101 0px 0px 80px;
+                
+               
+   } 
+   
+        .catalog{ 
+                margin: 50px 0 50px 0;
+                font-size: 30px;    text-align: 
+                center; font-family: nami;
+            }
+
+
+            .card2{
+
+                background-color: #ff0000;
+                width: 200px;
+                height: auto;
+            }
